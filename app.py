@@ -6,5 +6,9 @@ app = Flask(__name__)
 def index():
     return "Hello World!!!!!!!!!!"
 
+@app.route("/<string : name>")
+def hello(name):
+    return f"Hello, {name}!!!!"
+
 
     
